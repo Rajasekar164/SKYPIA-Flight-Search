@@ -1,0 +1,162 @@
+
+[
+    {
+        "id": 101,
+        "airline": "IndiGo",
+        "from": "BLR",
+        "to": "DEL",
+        "departure": "06:45",
+        "arrival": "09:30",
+        "price": 5400,
+        "stops": 0
+    },
+    {
+        "id": 102,
+        "airline": "Air India",
+        "from": "BLR",
+        "to": "DEL",
+        "departure": "08:15",
+        "arrival": "11:10",
+        "price": 7200,
+        "stops": 1
+    },
+    {
+        "id": 103,
+        "airline": "Vistara",
+        "from": "BLR",
+        "to": "DEL",
+        "departure": "10:00",
+        "arrival": "12:40",
+        "price": 6800,
+        "stops": 0
+    },
+    {
+        "id": 104,
+        "airline": "SpiceJet",
+        "from": "BLR",
+        "to": "DEL",
+        "departure": "12:30",
+        "arrival": "16:00",
+        "price": 4900,
+        "stops": 1
+    },
+    {
+        "id": 105,
+        "airline": "IndiGo",
+        "from": "BLR",
+        "to": "DEL",
+        "departure": "15:00",
+        "arrival": "17:45",
+        "price": 6100,
+        "stops": 0
+    },
+    {
+        "id": 106,
+        "airline": "Air India",
+        "from": "BLR",
+        "to": "DEL",
+        "departure": "17:30",
+        "arrival": "21:00",
+        "price": 8500,
+        "stops": 1
+    },
+    {
+        "id": 107,
+        "airline": "Vistara",
+        "from": "BLR",
+        "to": "DEL",
+        "departure": "19:00",
+        "arrival": "21:40",
+        "price": 7900,
+        "stops": 0
+    },
+    {
+        "id": 108,
+        "airline": "SpiceJet",
+        "from": "BLR",
+        "to": "DEL",
+        "departure": "21:15",
+        "arrival": "01:00",
+        "price": 3900,
+        "stops": 2
+    },
+    {
+        "id": 109,
+        "airline": "IndiGo",
+        "from": "DEL",
+        "to": "BOM",
+        "departure": "07:00",
+        "arrival": "09:10",
+        "price": 4500,
+        "stops": 0
+    },
+    {
+        "id": 110,
+        "airline": "Air India",
+        "from": "DEL",
+        "to": "BOM",
+        "departure": "09:30",
+        "arrival": "12:00",
+        "price": 6300,
+        "stops": 1
+    },
+    {
+        "id": 111,
+        "airline": "Vistara",
+        "from": "DEL",
+        "to": "BOM",
+        "departure": "11:45",
+        "arrival": "14:00",
+        "price": 8900,
+        "stops": 0
+    },
+    {
+        "id": 112,
+        "airline": "SpiceJet",
+        "from": "DEL",
+        "to": "BOM",
+        "departure": "14:20",
+        "arrival": "17:30",
+        "price": 5200,
+        "stops": 1
+    },
+    {
+        "id": 113,
+        "airline": "IndiGo",
+        "from": "MAA",
+        "to": "BLR",
+        "departure": "06:30",
+        "arrival": "07:35",
+        "price": 3200,
+        "stops": 0
+    },
+    {
+        "id": 114,
+        "airline": "Air India",
+        "from": "MAA",
+        "to": "BLR",
+        "departure": "13:00",
+        "arrival": "15:15",
+        "price": 5700,
+        "stops": 1
+    },
+    {
+        "id": 115,
+        "airline": "SpiceJet",
+        "from": "MAA",
+        "to": "BLR",
+        "departure": "18:00",
+        "arrival": "19:10",
+        "price": 4200,
+        "stops": 0
+    },
+    {
+        "id": 116,
+        "airline": "IndiGo",
+        "from": "BLR",
+        "to": "HYD",
+        "departure": "09:00",
+        "arrival": "10:10",
+        "stops": 0
+    }
+]
