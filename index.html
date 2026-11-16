@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover and compare flights around the world with SKYPIA.">
+
+    <title>SKYPIA | The Journey Around the World</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <a href="#" class="logo">
+                SKYPIA <span>✈</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#search-section" class="active">Flights</a>
+                <a href="#flight-results">Explore Flights</a>
+                <a href="#wishlist-section">My Wishlist</a>
+            </div>
+
+            <a href="#search-section" class="login-button">
+                Search Flights
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO AND SEARCH -->
+        <section class="hero-section" id="search-section">
+
+            <div class="container">
+
+                <div class="hero-heading">
+                    <p class="eyebrow">EXPLORE WITHOUT LIMITS</p>
+
+                    <h1>Your Journey Around the World</h1>
+
+                    <p>
+                        Discover destinations, compare flights
+                        and make every journey unforgettable.
+                    </p>
+                </div>
+
+
+                <!-- ONE-WAY SEARCH FORM -->
+                <form id="search-form" class="search-panel">
+
+                    <div class="search-fields">
+
+                        <div class="search-field">
+                            <label for="from">FROM</label>
+
+                            <input
+                                type="text"
+                                id="from"
+                                placeholder="e.g. BLR"
+                                value="BLR"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="swap-icon">⇄</div>
+
+
+                        <div class="search-field">
+                            <label for="to">TO</label>
+
+                            <input
+                                type="text"
+                                id="to"
+                                placeholder="e.g. DEL"
+                                value="DEL"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="search-field">
+                            <label for="date">DEPARTURE</label>
+
+                            <input
+                                type="date"
+                                id="date"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="search-field">
+                            <label for="passengers">PASSENGERS</label>
+
+                            <select id="passengers">
+                                <option value="1">1 Adult</option>
+                                <option value="2">2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                                <option value="5">5 Adults</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-bottom">
+
+                        <p>One Way · Economy Class · Best available fares</p>
+
+                        <button type="submit" id="search-button">
+                            SEARCH FLIGHTS
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- FLIGHT RESULTS -->
+        <section class="results-section container" id="flight-results">
+
+            <div class="results-heading">
+
+                <div>
+                    <p class="eyebrow">YOUR NEXT ADVENTURE</p>
+
+                    <h2>Available Flights</h2>
+
+                    <p class="section-description">
+                        Compare fares and find your perfect flight.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="results-layout">
+
+
+                <!-- FILTER SIDEBAR -->
+                <aside class="filter-sidebar">
+
+                    <div class="filter-heading">
+                        <h3>Filters</h3>
+
+                        <button type="button" id="reset-filters">
+                            Reset
+                        </button>
+                    </div>
+
+
+                    <!-- PRICE FILTER -->
+                    <div class="filter-group">
+
+                        <h4>Price Range</h4>
+
+                        <p class="filter-price">
+                            Up to ₹<span id="price-value">10000</span>
+                        </p>
+
+                        <input
+                            type="range"
+                            id="price-filter"
+                            min="3000"
+                            max="10000"
+                            value="10000"
+                            step="100"
+                        >
+
+                        <div class="range-labels">
+                            <span>₹3,000</span>
+                            <span>₹10,000</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- STOPS FILTER -->
+                    <div class="filter-group">
+
+                        <h4>Stops</h4>
+
+                        <label class="filter-option">
+
+                            <input
+                                type="checkbox"
+                                id="nonstop-filter"
+                            >
+
+                            <span>Non-stop flights</span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- AIRLINES -->
+                    <div class="filter-group">
+
+                        <h4>Popular Airlines</h4>
+
+                        <div class="airline-name">IndiGo</div>
+                        <div class="airline-name">Air India</div>
+                        <div class="airline-name">Vistara</div>
+                        <div class="airline-name">SpiceJet</div>
+
+                    </div>
+
+
+                    <!-- SKYPIA INFORMATION -->
+                    <div class="filter-group">
+
+                        <h4>Why SKYPIA?</h4>
+
+                        <p class="filter-note">
+                            Compare flight options, save favourites
+                            and find a journey that suits you.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+
+                <!-- FLIGHT CONTENT -->
+                <div class="flight-content">
+
+
+                    <!-- SORT PANEL -->
+                    <div class="sort-panel">
+
+                        <div class="sort-heading">
+                            <h3>Sort Flights</h3>
+
+                            <span>Choose your preference</span>
+                        </div>
+
+                        <select id="sort-filter">
+
+                            <option value="cheapest">
+                                Cheapest First
+                            </option>
+
+                            <option value="recommended">
+                                Recommended
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- LOADING -->
+                    <div id="loading" class="loading-state" hidden>
+
+                        <div class="loader"></div>
+
+                        <p>Finding the best flights for you...</p>
+
+                    </div>
+
+
+                    <!-- ERROR -->
+                    <div id="error" class="error-state" hidden>
+
+                        <h3>Unable to load flights</h3>
+
+                        <p>Please check your connection and try again.</p>
+
+                        <button type="button" id="retry-button">
+                            Try Again
+                        </button>
+
+                    </div>
+
+
+                    <!-- EMPTY STATE -->
+                    <div id="empty-state" class="empty-state" hidden>
+
+                        <h3>No flights found</h3>
+
+                        <p>
+                            Try another route or adjust your filters.
+                        </p>
+
+                    </div>
+
+
+                    <!-- FLIGHT CARDS -->
+                    <div id="flight-list" class="flight-list"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WISHLIST -->
+        <section class="wishlist-section container" id="wishlist-section">
+
+            <div class="wishlist-heading">
+
+                <div>
+                    <p class="eyebrow">YOUR FAVOURITES</p>
+
+                    <h2>My Wishlist <span>♥</span></h2>
+
+                    <p>Keep your favourite flights close.</p>
+                </div>
+
+            </div>
+
+            <div id="wishlist-list" class="wishlist-list"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="#" class="logo footer-logo">
+                    SKYPIA ✈
+                </a>
+
+                <p>The Journey Around the World</p>
+            </div>
+
+            <p>© 2026 SKYPIA. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>
